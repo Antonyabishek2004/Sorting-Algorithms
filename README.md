@@ -20,24 +20,43 @@ To write a program to perform selection sort and insertion sort using python pro
 ## Program:
 i)	#Selection Sort
 ```
-
-
-
-
-
+#Selection Sort
+#Developed by : Antony Abishek K
+#Register no : 212223240009
+num=eval(input())
+for i in range(len(num)):
+    low=i
+    for j in range(i+1,len(num)):
+        if num[j]<num[low]:
+            low=j
+    num[i],num[low]=num[low],num[i]
+print(num)
 ```
 ii)	#Insertion Sort
 ```
-
-
-
-
-
-
+#Insertion Sort
+#Developed by : Antony Abishek K
+#Register no : 212223240009
+num=eval(input())
+for i in range(1,len(num)):
+    insert=num[i]
+    j=i-1
+    while j>=0 and num[j]>=insert:
+        num[j+1]=num[j]
+        j=j-1
+        num[j+1]=insert
+print(num)
 ```
 
 ## Output:
 
+i)	#Selection Sort:
+
+![Screenshot 2024-05-17 235707](https://github.com/Antonyabishek2004/Sorting-Algorithms/assets/138849620/caa21d85-e869-4085-9fb5-49d926607535)
+
+ii)	#Insertion Sort:
+
+![Screenshot 2024-05-17 235742](https://github.com/Antonyabishek2004/Sorting-Algorithms/assets/138849620/33a796ea-999a-471c-90ab-a4862fc66523)
 
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
